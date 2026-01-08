@@ -37,7 +37,6 @@ h1 {
 
 #formulario {
   margin-top: 10px;
-
   width: 100%;
   padding-top: 50px;
   display: flex;
@@ -68,7 +67,7 @@ label {
   font-size: 15px;
   transition: 0.40s;
   margin-bottom: 8px;
-
+  cursor: pointer;
 }
 
 .caja:focus {
@@ -87,7 +86,10 @@ fieldset {
   border: 1px solid rgba(0, 0, 0, 0.233);
   border-radius: 12px;
   margin-bottom: 8px;
-
+ 
+}
+input{
+  cursor: pointer;
 }
 
 .terminos {
@@ -109,4 +111,15 @@ button:hover {
   background-color: rgb(35, 113, 216);
   box-shadow: 0 0 20px rgb(55, 0, 255);
   color: aliceblue
+}
+
+.cajaError:focus{
+  border:3px solid red;
+  box-shadow: 0 0 12px 5px red;
+  background-color: rgba(243, 105, 105, 0.205);
+
+}
+
+.cajaError:focus::placeholder{
+  color:white;
 }
